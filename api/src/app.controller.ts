@@ -1,42 +1,44 @@
 import {Body, Controller, Delete, Get, Param, Post, Query} from '@nestjs/common';
 import { AppService } from './app.service';
-import { ChocolateBar} from "./ChocolateBar";
+import { CandyBar} from "./CandyBar";
 
-@Controller("chocolateBars")
+@Controller("CandyBars")
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getChocolateBars(@Query('company') company: string): ChocolateBar[]{
-    if(company)
-      return this.appService.getChocolateBarsOf(company);
-    return this.appService.getAllChocolateBars();
+  getCandyBars(): CandyBar[]{
+    return this.appService.getAllCandyBars();
   }
 
   @Post()
-  createChocolateBar(@Body() chocolateBar: ChocolateBar): ChocolateBar{
-    const lclChocolateBar: ChocolateBar = {
-      company: chocolateBar["company"],
-      name: chocolateBar["name"],
-      date: chocolateBar["date"],
-      cocoa_percent: chocolateBar["cocoa_percent"],
-      company_location: chocolateBar["company_location"],
-      rating: chocolateBar["rating"],
-      bean_origin: chocolateBar["bean_origin"],
-      bean_type: chocolateBar["bean_type"],
-      ref:  chocolateBar["ref"]
+  createCandyBar(@Body() CandyBar: CandyBar): CandyBar{
+    const lclCandyBar: CandyBar = {
+      bar: CandyBar["bar"],
+      caramel: CandyBar["caramel"],
+      chocolate: CandyBar["chocolate"],
+      competitorname: CandyBar["competitorname"],
+      crispedricewafer: CandyBar["crispedricewafer"],
+      fruity: CandyBar["fruity"],
+      hard: CandyBar["hard"],
+      nougat: CandyBar["nougat"],
+      peanutyalmondy:  CandyBar["peanutyalmondy"],
+      pluribus: CandyBar["pluribus"],
+      pricepercent: CandyBar["pricepercent"],
+      sugarpercent: CandyBar["sugarpercent"],
+      winpercent: CandyBar["winpercent"]
     };
-    this.appService.addChocolateBar(lclChocolateBar);
-    return lclChocolateBar;
+    this.appService.addCandyBar(lclCandyBar);
+    return lclCandyBar;
   }
 
-  @Get('/:ref')
-  getChocolateBar(@Param('ref') ref: string): ChocolateBar{
-    return this.appService.getChocolateBar(ref);
+  @Get('/:competitorname')
+  getCandyBar(@Param('competitorname') competitorname: string): CandyBar{
+    return this.appService.getCandyBar(competitorname);
   }
 
-  @Delete('/:ref')
-  deleteChocolateBar(@Param('ref') ref: string): void{
-    this.appService.deleteChocolateBar(ref);
+  @Delete('/:competitorname')
+  deleteCandyBar(@Param('ref') competitorname: string): void{
+    this.appService.deleteCandyBar(competitorname);
   }
 }

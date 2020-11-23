@@ -1,45 +1,44 @@
 import { Injectable } from '@nestjs/common';
-import { ChocolateBar} from "./ChocolateBar";
+import { CandyBar} from "./CandyBar";
 
 @Injectable()
 export class AppService {
 
-  private readonly candyshop: ChocolateBar[] = [];
+  private readonly candyshop: CandyBar[] = [];
 
-  getAllChocolateBars(): ChocolateBar[] | undefined{
-    this.candyshop.sort((chocolateBarA, chocolateBarB) => {
-      return chocolateBarA.ref.localeCompare(chocolateBarB.ref);
+  getAllCandyBars(): CandyBar[] | undefined{
+    this.candyshop.sort((CandyBarA, CandyBarB) => {
+      return CandyBarA.competitorname.localeCompare(CandyBarB.competitorname);
     });
     return this.candyshop;
   }
 
-  addChocolateBar(chocolateBar: ChocolateBar){
+  addCandyBar(CandyBar: CandyBar){
     if(this.candyshop.length == 0){
-      console.log(chocolateBar.company);
-      this.candyshop.push(chocolateBar);
+      this.candyshop.push(CandyBar);
     }
     else
     {
       for(let i=0; i< this.candyshop.length ; i++)
       {
-        if(this.candyshop[i].ref === chocolateBar.ref){
+        if(this.candyshop[i].competitorname === CandyBar.competitorname){
           return;
         }
       }
-      this.candyshop.push(chocolateBar);
+      this.candyshop.push(CandyBar);
     }
   }
 
-  getChocolateBar(ref: string): ChocolateBar | undefined {
+  getCandyBar(competitorname: string): CandyBar | undefined {
     let array = [];
     for(let i=0; i< this.candyshop.length; i++){
-      if(this.candyshop[i].ref === ref){
+      if(this.candyshop[i].competitorname === competitorname){
         return this.candyshop[i];
       }
     }
   }
 
-  getChocolateBarsOf(company: string): ChocolateBar[] | undefined{
+  /*getCandyBarsOf(company: string): CandyBar[] | undefined{
     let array= [];
     for(let i=0; i<this.candyshop.length; i++){
       if(this.candyshop[i].company === company){
@@ -47,15 +46,16 @@ export class AppService {
       }
     }
     return array;
-  }
+  }*/
 
-  deleteChocolateBar(ref: string){
+  deleteCandyBar(competitorname: string){
     for(let i=0; i< this.candyshop.length ; i++){
-      if(this.candyshop[i].ref === ref) {
+      if(this.candyshop[i].competitorname === competitorname) {
         this.candyshop.splice(i, 1);
         break;
       }
     }
   }
+
 
 }
