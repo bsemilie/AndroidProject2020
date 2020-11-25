@@ -1,10 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { CandyBar} from "./CandyBar";
+import * as data from 'candy-data_json.json';
 
 @Injectable()
-export class AppService {
+export class CandyBarsService {
 
-  private readonly candyshop: CandyBar[] = [];
+  readonly candyshop: CandyBar[] =<CandyBar[]><unknown>data;
 
   getAllCandyBars(): CandyBar[] | undefined{
     this.candyshop.sort((CandyBarA, CandyBarB) => {
@@ -38,15 +39,6 @@ export class AppService {
     }
   }
 
-  /*getCandyBarsOf(company: string): CandyBar[] | undefined{
-    let array= [];
-    for(let i=0; i<this.candyshop.length; i++){
-      if(this.candyshop[i].company === company){
-        array.push(this.candyshop[i]);
-      }
-    }
-    return array;
-  }*/
 
   deleteCandyBar(competitorname: string){
     for(let i=0; i< this.candyshop.length ; i++){

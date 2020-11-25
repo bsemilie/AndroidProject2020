@@ -3,22 +3,42 @@
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="3" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:AndroidProject" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="948ff9f4-facf-4a8d-ad1f-38085176faab" name="Default Changelist" comment="feat: change database and names to correlate wtih new database">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ismin-2020-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/candy-data_json.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/CandyBar.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/CandyShop.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/ChocolateBar.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/app.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/app.service.ts" afterDir="false" />
+    <list default="true" id="948ff9f4-facf-4a8d-ad1f-38085176faab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/json.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/CandyBarName.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/users.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/users.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/CandyBar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/CandyBar.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/app.controller.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/candyBars.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/candyBars.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +74,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.14.7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Program Files/nodejs/node.exe" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.10" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -72,6 +93,19 @@
     <property name="ts.external.directory.path" value="C:\Users\besem\WebstormProjects\android-project\api\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -83,7 +117,9 @@
       <workItem from="1605458453146" duration="68000" />
       <workItem from="1605458717205" duration="893000" />
       <workItem from="1605459643837" duration="10989000" />
-      <workItem from="1606121923201" duration="6037000" />
+      <workItem from="1606121923201" duration="6134000" />
+      <workItem from="1606314334312" duration="4782000" />
+      <workItem from="1606319746246" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="Init: beginning of the project">
       <created>1605460783385</created>
@@ -99,11 +135,30 @@
       <option name="project" value="LOCAL" />
       <updated>1605472475120</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: change database and names to correlate wtih new database">
+      <created>1606141248230</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606141248230</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init: beginning of the project" />
@@ -112,15 +167,20 @@
     <option name="LAST_COMMIT_MESSAGE" value="feat: change database and names to correlate wtih new database" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-812" y="561" key="#ESLint" timestamp="1605458804127">
-      <screen x="-1360" y="305" width="1360" height="728" />
+    <state x="516" y="239" key="#ESLint" timestamp="1606319111583">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="-812" y="561" key="#ESLint/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605458804127" />
-    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1606141236245">
+    <state x="516" y="239" key="#ESLint/0.0.1280.680/-1360.305.1360.728@0.0.1280.680" timestamp="1606319111583" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606319767352">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/-1360.305.1360.728@0.0.1280.680" timestamp="1606319767352" />
+    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1606141247072">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="-1059" y="305" key="CommitChangelistDialog2/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605472474490" />
-    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.680/-1360.320.1360.728@0.0.1280.680" timestamp="1606141236245" />
+    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.680/-1360.320.1360.728@0.0.1280.680" timestamp="1606141247072" />
     <state x="-900" y="423" key="FileChooserDialogImpl" timestamp="1605459588623">
       <screen x="-1360" y="305" width="1360" height="728" />
     </state>
@@ -141,14 +201,16 @@
       <screen x="-1360" y="305" width="1360" height="728" />
     </state>
     <state width="1339" height="179" key="GridCell.Tab.0.right/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605472573029" />
-    <state x="-1179" y="313" key="SettingsEditor" timestamp="1605459602948">
-      <screen x="-1360" y="305" width="1360" height="728" />
+    <state x="170" y="0" key="SettingsEditor" timestamp="1606314390706">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="-1179" y="313" key="SettingsEditor/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605459602948" />
-    <state x="-1088" y="402" key="Vcs.Push.Dialog.v2" timestamp="1605472491693">
-      <screen x="-1360" y="305" width="1360" height="728" />
+    <state x="170" y="0" key="SettingsEditor/0.0.1280.680/-1360.305.1360.728@0.0.1280.680" timestamp="1606314390706" />
+    <state x="256" y="91" key="Vcs.Push.Dialog.v2" timestamp="1606141276217">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="-1088" y="402" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605472491693" />
+    <state x="256" y="91" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.320.1360.728@0.0.1280.680" timestamp="1606141276217" />
     <state x="0" y="0" width="587" height="680" key="find.popup" timestamp="1606124549067">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

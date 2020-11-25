@@ -1,6 +1,6 @@
 export interface CandyBar{
     bar: number, //is it a candy bar
-    caramel: number, //is there caremel in the candy
+    caramel: number, //is there caramel in the candy
     chocolate: number, //does it contain chocolate
     competitorname: string, //Name of the candy
     crispedricewafer: number, //Does it contain crisped rice, wafers, or a cookie component?
@@ -12,4 +12,5 @@ export interface CandyBar{
     pricepercent: number, //Unit price percentile compared to the rest of the set
     sugarpercent: number, //Percentile of sugar it falls under within the data set
     winpercent: number, //Overall win percentage according to 269,000 matchups
+    image: string, //Image represnting the candybar
 }

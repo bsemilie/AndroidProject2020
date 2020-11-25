@@ -1,10 +1,10 @@
 import {Body, Controller, Delete, Get, Param, Post, Query} from '@nestjs/common';
-import { AppService } from './app.service';
+import { CandyBarsService } from './candyBars.service';
 import { CandyBar} from "./CandyBar";
 
-@Controller("CandyBars")
-export class AppController {
-  constructor(private readonly appService: AppService) {}
+@Controller("candyBars")
+export class CandyBarsController {
+  constructor(private readonly appService: CandyBarsService) {}
 
   @Get()
   getCandyBars(): CandyBar[]{
@@ -26,7 +26,8 @@ export class AppController {
       pluribus: CandyBar["pluribus"],
       pricepercent: CandyBar["pricepercent"],
       sugarpercent: CandyBar["sugarpercent"],
-      winpercent: CandyBar["winpercent"]
+      winpercent: CandyBar["winpercent"],
+      image: CandyBar["image"]
     };
     this.appService.addCandyBar(lclCandyBar);
     return lclCandyBar;
@@ -38,7 +39,7 @@ export class AppController {
   }
 
   @Delete('/:competitorname')
-  deleteCandyBar(@Param('ref') competitorname: string): void{
+  deleteCandyBar(@Param('competitorname') competitorname: string): void{
     this.appService.deleteCandyBar(competitorname);
   }
 }
