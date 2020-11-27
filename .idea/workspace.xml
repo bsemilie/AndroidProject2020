@@ -27,9 +27,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="948ff9f4-facf-4a8d-ad1f-38085176faab" name="Default Changelist" comment="feat: modified json file for database">
+    <list default="true" id="948ff9f4-facf-4a8d-ad1f-38085176faab" name="Default Changelist" comment="feat: use PORT env var to start app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +84,19 @@
     <property name="ts.external.directory.path" value="C:\Users\besem\IdeaProjects\android-project\api\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -101,7 +114,7 @@
       <workItem from="1606326360986" duration="65000" />
       <workItem from="1606326871690" duration="5000" />
       <workItem from="1606463055752" duration="3683000" />
-      <workItem from="1606482900400" duration="1957000" />
+      <workItem from="1606482900400" duration="2185000" />
     </task>
     <task id="LOCAL-00001" summary="Init: beginning of the project">
       <created>1605460783385</created>
@@ -138,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606466662749</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: use PORT env var to start app">
+      <created>1606487410029</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606487410029</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +182,8 @@
     <MESSAGE value="feat: change database and names to correlate wtih new database" />
     <MESSAGE value="feat: added controller and service to manage favorites of a user and import of data from json file" />
     <MESSAGE value="feat: modified json file for database" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: modified json file for database" />
+    <MESSAGE value="feat: use PORT env var to start app" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: use PORT env var to start app" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="239" key="#ESLint" timestamp="1606319111583">
