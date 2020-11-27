@@ -27,9 +27,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="948ff9f4-facf-4a8d-ad1f-38085176faab" name="Default Changelist" comment="feat: added controller and service to manage favorites of a user and import of data from json file">
+    <list default="true" id="948ff9f4-facf-4a8d-ad1f-38085176faab" name="Default Changelist" comment="feat: modified json file for database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/candy-data_json.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/candy-data_json.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,8 @@
       <workItem from="1606319746246" duration="12000" />
       <workItem from="1606326360986" duration="65000" />
       <workItem from="1606326871690" duration="5000" />
-      <workItem from="1606463055752" duration="3488000" />
+      <workItem from="1606463055752" duration="3683000" />
+      <workItem from="1606482900400" duration="1957000" />
     </task>
     <task id="LOCAL-00001" summary="Init: beginning of the project">
       <created>1605460783385</created>
@@ -130,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606326190846</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: modified json file for database">
+      <created>1606466662749</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606466662749</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +161,8 @@
     <MESSAGE value="feat: create API to manage chocolate bars" />
     <MESSAGE value="feat: change database and names to correlate wtih new database" />
     <MESSAGE value="feat: added controller and service to manage favorites of a user and import of data from json file" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added controller and service to manage favorites of a user and import of data from json file" />
+    <MESSAGE value="feat: modified json file for database" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: modified json file for database" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="239" key="#ESLint" timestamp="1606319111583">
@@ -195,10 +204,10 @@
     </state>
     <state x="-1179" y="313" key="SettingsEditor/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605459602948" />
     <state x="170" y="0" key="SettingsEditor/0.0.1280.680/-1360.305.1360.728@0.0.1280.680" timestamp="1606326385186" />
-    <state x="256" y="91" key="Vcs.Push.Dialog.v2" timestamp="1606326199659">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="-1088" y="402" key="Vcs.Push.Dialog.v2" timestamp="1606466672937">
+      <screen x="-1360" y="305" width="1360" height="728" />
     </state>
-    <state x="-1088" y="402" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605472491693" />
+    <state x="-1088" y="402" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1606466672937" />
     <state x="256" y="91" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.305.1360.728@0.0.1280.680" timestamp="1606326199659" />
     <state x="256" y="91" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.320.1360.728@0.0.1280.680" timestamp="1606141276217" />
     <state x="0" y="0" width="587" height="680" key="find.popup" timestamp="1606124549067">
@@ -209,9 +218,10 @@
       <screen x="-1360" y="305" width="1360" height="728" />
     </state>
     <state x="-963" y="476" key="jetbrains.nodejs.interpreters-dialog/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605459247879" />
-    <state x="91" y="0" key="new project wizard" timestamp="1606326420515">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="-1263" y="305" key="new project wizard" timestamp="1606466771400">
+      <screen x="-1360" y="305" width="1360" height="728" />
     </state>
+    <state x="-1263" y="305" key="new project wizard/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1606466771400" />
     <state x="91" y="0" key="new project wizard/0.0.1280.680/-1360.305.1360.728@0.0.1280.680" timestamp="1606326420515" />
     <state x="297" y="151" key="run.anything.popup" timestamp="1606463182599">
       <screen x="0" y="0" width="1280" height="680" />
