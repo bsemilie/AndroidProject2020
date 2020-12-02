@@ -123,4 +123,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/peanutyalmondy" />
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="189dp"
+        android:background="#00020202"
+        android:onClick="favButton"
+        android:scaleType="fitCenter"
+        android:tint="@android:color/holo_orange_light"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_star_border_24" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,10 @@
 package com.ismin.projectapp
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -8,10 +12,15 @@ import com.squareup.picasso.Picasso
 
 
 class DetailActivity : AppCompatActivity() {
+    private var fav : Boolean = false
+    private lateinit var candy : Candy
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
-        val candy = intent.getSerializableExtra("candy") as Candy
+        candy = intent.getSerializableExtra("candy") as Candy
+
+        fav= intent.getBooleanExtra("fav",false)
 
         var imageView=findViewById<ImageView>(R.id.imageView)
         Picasso.get().load(candy.image).into(imageView)
@@ -30,5 +39,30 @@ class DetailActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.peanutyalmondy).text = "Peanuty or Almondy: ${candy.peanutyalmondy.toString()}"
         findViewById<TextView>(R.id.pluribus).text = "Bar: ${candy.pluribus.toString()}"
 
+        if(fav){
+            findViewById<ImageButton>(R.id.imageButton).setImageResource(R.drawable.ic_baseline_star_24)
+        }
+
     }
+
+    fun favButton(view: View) {
+        val imgBttn= findViewById<ImageButton>(R.id.imageButton)
+        if(fav){
+            imgBttn.setImageResource(R.drawable.ic_baseline_star_border_24)
+            fav = !fav
+        }else{
+            imgBttn.setImageResource(R.drawable.ic_baseline_star_24)
+            fav = !fav
+        }
+    }
+
+    override fun onBackPressed() {
+        val returnIntent = Intent()
+        returnIntent.putExtra("fav", fav)
+        returnIntent.putExtra("candyname",candy.competitorname )
+        setResult(Activity.RESULT_OK, returnIntent)
+        finish()
+        super.onBackPressed()
+    }
+
 }
