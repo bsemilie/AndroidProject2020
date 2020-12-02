@@ -7,8 +7,14 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
+import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() /**,CandyAdapter.OnItemClickListener**/ {
     private val c1 = Candy(
@@ -92,18 +98,47 @@ class MainActivity : AppCompatActivity() /**,CandyAdapter.OnItemClickListener**/
         image ="https://www.myamericanmarket.com/6103-large_default/airheads-blue-raspberry-taffy-candy.jpg"
     )
 
+    private lateinit var candyService: CandyService
     private val candyshelf= CandyShelf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        this.candyshelf.addCandy(c1)
-        this.candyshelf.addCandy(c2)
-        this.candyshelf.addCandy(c3)
-        this.candyshelf.addCandy(c4)
-        this.candyshelf.addCandy(c5)
-        displayList()
+        val retrofit = Retrofit.Builder()
+            .addConverterFactory(GsonConverterFactory.create())
+            .baseUrl(SERVER_BASE_URL)
+            .build()
+
+        candyService = retrofit.create(CandyService::class.java)
+
+        candyService.getCandyBars().enqueue(object: Callback<ArrayList<Candy>>{
+            override fun onResponse(
+                call: Call<ArrayList<Candy>>,
+                response: Response<ArrayList<Candy>>
+            ) {
+                val allCandy = response.body()
+                allCandy?.forEach{
+                    candyshelf.addCandy(it)
+                }
+                val candyListFragment = CandyListFragment.newInstance(candyshelf.getAllCandies())
+                supportFragmentManager.beginTransaction()
+                    .add(R.id.a_main_lyt_fragment_container, candyListFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit()
+            }
+
+            override fun onFailure(call: Call<ArrayList<Candy>>, t: Throwable) {
+                displayErrorToast(t)
+            }
+        })
+
+//        this.candyshelf.addCandy(c1)
+//        this.candyshelf.addCandy(c2)
+//        this.candyshelf.addCandy(c3)
+//        this.candyshelf.addCandy(c4)
+//        this.candyshelf.addCandy(c5)
+//        displayList()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -145,6 +180,15 @@ class MainActivity : AppCompatActivity() /**,CandyAdapter.OnItemClickListener**/
 
     fun goToAbout(view: View) {
         displayAbout()
+    }
+
+    companion object {
+        const val SERVER_BASE_URL = "https://candyshop.cleverapps.io/"
+    }
+
+    private fun displayErrorToast(t: Throwable){
+        Toast.makeText(applicationContext, "Network error ${t.localizedMessage}", Toast.LENGTH_LONG)
+            .show()
     }
 
 }
