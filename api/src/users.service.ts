@@ -31,11 +31,12 @@ export class UsersService {
         return this.favorites.get(userId);
     }
 
-    deleteUsersFavorites(userId: string, candyBarName: string){
+    deleteUsersFavorites(userId: string, candyBarName: string): string[]{
         let userIdFavorites = this.favorites.get(userId);
         let pos = userIdFavorites.indexOf(candyBarName);
         userIdFavorites.splice(pos,1);
         this.favorites.set(userId, userIdFavorites);
+        return this.favorites.get(userId);
     }
 
 

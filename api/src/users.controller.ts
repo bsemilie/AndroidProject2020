@@ -18,8 +18,8 @@ export class UsersController {
     }
 
     @Delete('/:userId/favorites/:candyBarName')
-    deleteUsersFavorites(@Param('userId') userId, @Param('candyBarName') candyBarName){
-        this.appService.deleteUsersFavorites(userId, candyBarName);
+    deleteUsersFavorites(@Param('userId') userId, @Param('candyBarName') candyBarName): string[]{
+        return this.appService.deleteUsersFavorites(userId, candyBarName);
     }
 
 }
