@@ -27,9 +27,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="948ff9f4-facf-4a8d-ad1f-38085176faab" name="Default Changelist" comment="feat: use PORT env var to start app">
+    <list default="true" id="948ff9f4-facf-4a8d-ad1f-38085176faab" name="Default Changelist" comment="feat: config package.json for clevercloud use">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/candy-data_json.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/candy-data_json.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +53,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/api" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -58,6 +62,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1kKo44wzSW32Ot3tS7lV9CVs24z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -84,19 +89,6 @@
     <property name="ts.external.directory.path" value="C:\Users\besem\IdeaProjects\android-project\api\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -114,7 +106,8 @@
       <workItem from="1606326360986" duration="65000" />
       <workItem from="1606326871690" duration="5000" />
       <workItem from="1606463055752" duration="3683000" />
-      <workItem from="1606482900400" duration="2185000" />
+      <workItem from="1606482900400" duration="2848000" />
+      <workItem from="1607007462999" duration="1571000" />
     </task>
     <task id="LOCAL-00001" summary="Init: beginning of the project">
       <created>1605460783385</created>
@@ -158,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606487410029</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: config package.json for clevercloud use">
+      <created>1606487648568</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606487648568</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,7 +183,8 @@
     <MESSAGE value="feat: added controller and service to manage favorites of a user and import of data from json file" />
     <MESSAGE value="feat: modified json file for database" />
     <MESSAGE value="feat: use PORT env var to start app" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: use PORT env var to start app" />
+    <MESSAGE value="feat: config package.json for clevercloud use" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: config package.json for clevercloud use" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="239" key="#ESLint" timestamp="1606319111583">
@@ -225,10 +226,10 @@
     </state>
     <state x="-1179" y="313" key="SettingsEditor/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605459602948" />
     <state x="170" y="0" key="SettingsEditor/0.0.1280.680/-1360.305.1360.728@0.0.1280.680" timestamp="1606326385186" />
-    <state x="-1088" y="402" key="Vcs.Push.Dialog.v2" timestamp="1606466672937">
+    <state x="-1088" y="402" key="Vcs.Push.Dialog.v2" timestamp="1606487661557">
       <screen x="-1360" y="305" width="1360" height="728" />
     </state>
-    <state x="-1088" y="402" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1606466672937" />
+    <state x="-1088" y="402" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1606487661557" />
     <state x="256" y="91" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.305.1360.728@0.0.1280.680" timestamp="1606326199659" />
     <state x="256" y="91" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.320.1360.728@0.0.1280.680" timestamp="1606141276217" />
     <state x="0" y="0" width="587" height="680" key="find.popup" timestamp="1606124549067">
