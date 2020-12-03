@@ -7,15 +7,19 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
+import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.*
+import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity(), CandyListFragment.CandyListListener {
 
     private lateinit var candyService: CandyService
+    private lateinit var userService: UserService
     private val candyshelf = CandyShelf()
     private var favShelf = arrayListOf<String>()
     private lateinit var username: String
@@ -32,16 +36,9 @@ class MainActivity : AppCompatActivity(), CandyListFragment.CandyListListener {
             .build()
 
         candyService = retrofit.create(CandyService::class.java)
+        userService = retrofit.create(UserService::class.java)
 
-        /**
-         * Tu peux faire la récup des données de l'user ici (avant de create la liste)
-         * T'as juste à remplir les favoris de l'user dans favshelf
-         * Je n'utilise que le competitorname
-         *
-         * Tu peux envoyer la liste sur clevercloud a la fin des fonctions:
-         * favFromFragment et refreshPostDetail, en fin du fichier
-         **/
-
+        createFav()
         createList()
     }
 
@@ -76,6 +73,24 @@ class MainActivity : AppCompatActivity(), CandyListFragment.CandyListListener {
             }
 
             override fun onFailure(call: Call<ArrayList<Candy>>, t: Throwable) {
+                displayErrorToast(t)
+            }
+        })
+    }
+
+    private fun createFav(){
+        userService.getUserFavorites(username).enqueue(object : Callback<ArrayList<String>> {
+            override fun onResponse(
+                call: Call<ArrayList<String>>,
+                response: Response<ArrayList<String>>
+            ) {
+                val allFavorites = response.body()
+                allFavorites?.forEach {
+                    favShelf.add(it)
+                }
+            }
+
+            override fun onFailure(call: Call<ArrayList<String>>, t: Throwable) {
                 displayErrorToast(t)
             }
         })
@@ -119,14 +134,35 @@ class MainActivity : AppCompatActivity(), CandyListFragment.CandyListListener {
     override fun favFromFragment(name: String) {
         if (favShelf.contains(name)) {
             Toast.makeText(this, "Removing ${name}", Toast.LENGTH_SHORT).show()
-            favShelf.remove(name)
+
+            userService.deleteUserFavorite(username, name).enqueue(object: Callback<ArrayList<String>>{
+                override fun onResponse(call : Call<ArrayList<String>>, response: Response<ArrayList<String>>) {
+                    favShelf.remove(name)
+                }
+
+                override fun onFailure(call : Call<ArrayList<String>>, t: Throwable) {
+                    displayErrorToast(t)
+                }
+            })
         } else {
             Toast.makeText(this, "Adding ${name}", Toast.LENGTH_SHORT).show()
-            favShelf.add(name)
+
+            val candyName = CandyName(name = name)
+            userService.addUserFavorites(username,candyName).enqueue(object: Callback<ArrayList<String>>{
+                override fun onResponse(call: Call<ArrayList<String>>, response: Response<ArrayList<String>>) {
+                    favShelf.add(name)
+                    refreshPostDetail()
+                }
+
+                override fun onFailure(call: Call<ArrayList<String>>, t: Throwable) {
+                    displayErrorToast(t)
+                }
+            })
         }
     }
 
     override fun refreshPostDetail() {
+        createFav()
         createList()
     }
 
