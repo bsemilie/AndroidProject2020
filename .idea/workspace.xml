@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="948ff9f4-facf-4a8d-ad1f-38085176faab" name="Default Changelist" comment="Modified return type of delete user favorite function and images url in json file">
+    <list default="true" id="948ff9f4-facf-4a8d-ad1f-38085176faab" name="Default Changelist" comment="Wrote README file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -104,7 +104,7 @@
       <workItem from="1607007462999" duration="1571000" />
       <workItem from="1607012576750" duration="536000" />
       <workItem from="1607032275759" duration="39000" />
-      <workItem from="1607083761354" duration="1306000" />
+      <workItem from="1607083761354" duration="1564000" />
     </task>
     <task id="LOCAL-00001" summary="Init: beginning of the project">
       <created>1605460783385</created>
@@ -162,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607012988536</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Wrote README file">
+      <created>1607085109955</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607085109955</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +199,8 @@
     <MESSAGE value="feat: use PORT env var to start app" />
     <MESSAGE value="feat: config package.json for clevercloud use" />
     <MESSAGE value="Modified return type of delete user favorite function and images url in json file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified return type of delete user favorite function and images url in json file" />
+    <MESSAGE value="Wrote README file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wrote README file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="239" key="#ESLint" timestamp="1606319111583">
@@ -241,13 +249,18 @@
     <state x="-1179" y="313" key="SettingsEditor/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605459602948" />
     <state x="170" y="0" key="SettingsEditor/0.0.1280.680/-1360.305.1360.728@0.0.1280.680" timestamp="1606326385186" />
     <state x="170" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1607012947281" />
-    <state x="256" y="91" key="Vcs.Push.Dialog.v2" timestamp="1607013000957">
+    <state x="256" y="91" key="Vcs.Push.Dialog.v2" timestamp="1607085309323">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="-1088" y="402" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1606487661557" />
     <state x="256" y="91" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.305.1360.728@0.0.1280.680" timestamp="1606326199659" />
     <state x="256" y="91" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.320.1360.728@0.0.1280.680" timestamp="1606141276217" />
+    <state x="256" y="91" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.302.1360.728@0.0.1280.680" timestamp="1607085309323" />
     <state x="256" y="91" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607013000957" />
+    <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607085275499">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.302.1360.728@0.0.1280.680" timestamp="1607085275499" />
     <state x="0" y="0" width="587" height="680" key="find.popup" timestamp="1606124549067">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

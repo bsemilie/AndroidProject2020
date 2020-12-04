@@ -4,7 +4,7 @@ Coded by:
 - Aubin Denis
 - Bes Emilie
 
-##**Description**
+## **Description**
 
 This application is a study project in the 3rd year of the ISMIN branch of the Mines of Saint-Etienne.
 
