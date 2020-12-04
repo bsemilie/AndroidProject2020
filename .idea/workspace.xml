@@ -16,24 +16,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:AndroidProject" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="948ff9f4-facf-4a8d-ad1f-38085176faab" name="Default Changelist" comment="feat: config package.json for clevercloud use">
+    <list default="true" id="948ff9f4-facf-4a8d-ad1f-38085176faab" name="Default Changelist" comment="Modified return type of delete user favorite function and images url in json file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/candy-data_json.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/candy-data_json.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,21 +80,8 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\besem\OneDrive\Documents\ISMIN\ISMIN 3A\AndroidProject2020\api\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -124,7 +102,9 @@
       <workItem from="1606463055752" duration="3683000" />
       <workItem from="1606482900400" duration="2848000" />
       <workItem from="1607007462999" duration="1571000" />
-      <workItem from="1607012576750" duration="369000" />
+      <workItem from="1607012576750" duration="536000" />
+      <workItem from="1607032275759" duration="39000" />
+      <workItem from="1607083761354" duration="1306000" />
     </task>
     <task id="LOCAL-00001" summary="Init: beginning of the project">
       <created>1605460783385</created>
@@ -175,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606487648568</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Modified return type of delete user favorite function and images url in json file">
+      <created>1607012988536</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607012988536</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +191,8 @@
     <MESSAGE value="feat: modified json file for database" />
     <MESSAGE value="feat: use PORT env var to start app" />
     <MESSAGE value="feat: config package.json for clevercloud use" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: config package.json for clevercloud use" />
+    <MESSAGE value="Modified return type of delete user favorite function and images url in json file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified return type of delete user favorite function and images url in json file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="239" key="#ESLint" timestamp="1606319111583">
@@ -221,39 +209,45 @@
     </state>
     <state x="-1059" y="305" key="CommitChangelistDialog2/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605472474490" />
     <state x="283" y="0" key="CommitChangelistDialog2/0.0.1280.680/-1360.320.1360.728@0.0.1280.680" timestamp="1606141247072" />
-    <state x="433" y="110" key="FileChooserDialogImpl" timestamp="1607012928608">
+    <state x="433" y="110" key="FileChooserDialogImpl" timestamp="1607083791455">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="-900" y="423" key="FileChooserDialogImpl/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605459588623" />
-    <state x="433" y="110" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1607012928608" />
-    <state width="1339" height="179" key="GridCell.Tab.0.bottom" timestamp="1605472573029">
-      <screen x="-1360" y="305" width="1360" height="728" />
+    <state x="433" y="110" key="FileChooserDialogImpl/0.0.1280.680/1920.302.1360.728@0.0.1280.680" timestamp="1607083791455" />
+    <state x="433" y="110" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1607032312753" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1607013115445">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1339" height="179" key="GridCell.Tab.0.bottom/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605472573029" />
-    <state width="1339" height="179" key="GridCell.Tab.0.center" timestamp="1605472573029">
-      <screen x="-1360" y="305" width="1360" height="728" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607013115445" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1607013115445">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1339" height="179" key="GridCell.Tab.0.center/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605472573029" />
-    <state width="1339" height="179" key="GridCell.Tab.0.left" timestamp="1605472573028">
-      <screen x="-1360" y="305" width="1360" height="728" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607013115445" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1607013115445">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1339" height="179" key="GridCell.Tab.0.left/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605472573028" />
-    <state width="1339" height="179" key="GridCell.Tab.0.right" timestamp="1605472573029">
-      <screen x="-1360" y="305" width="1360" height="728" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607013115445" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1607013115445">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1339" height="179" key="GridCell.Tab.0.right/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605472573029" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607013115445" />
     <state x="170" y="0" key="SettingsEditor" timestamp="1607012947281">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="-1179" y="313" key="SettingsEditor/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1605459602948" />
     <state x="170" y="0" key="SettingsEditor/0.0.1280.680/-1360.305.1360.728@0.0.1280.680" timestamp="1606326385186" />
     <state x="170" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1607012947281" />
-    <state x="-1088" y="402" key="Vcs.Push.Dialog.v2" timestamp="1606487661557">
-      <screen x="-1360" y="305" width="1360" height="728" />
+    <state x="256" y="91" key="Vcs.Push.Dialog.v2" timestamp="1607013000957">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="-1088" y="402" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.305.1360.728@-1360.305.1360.728" timestamp="1606487661557" />
     <state x="256" y="91" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.305.1360.728@0.0.1280.680" timestamp="1606326199659" />
     <state x="256" y="91" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1360.320.1360.728@0.0.1280.680" timestamp="1606141276217" />
+    <state x="256" y="91" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607013000957" />
     <state x="0" y="0" width="587" height="680" key="find.popup" timestamp="1606124549067">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
